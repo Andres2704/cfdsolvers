@@ -1,7 +1,7 @@
 
 # 🌀 CFD Solvers in Julia
 
-This repository is dedicated to implementing various **Computational Fluid Dynamics (CFD)** solvers in Julia. Each solver is designed to be as modular, readable, and educational as possible. The project begins with a classic test case: **2D lid-driven cavity flow**, solved using a finite difference scheme with **Rhie-Chow interpolation** for pressure-velocity coupling on a collocated grid.
+This repository is dedicated to implementing various **Computational Fluid Dynamics (CFD)** solvers in Julia. Each solver is designed to be as modular, readable, and educational as possible. The project begins with a classic test case: **2D lid-driven cavity flow**, solved using a finite volume scheme with **Rhie-Chow interpolation** for pressure-velocity coupling on a collocated grid and also **staggered grids**.
 
 ## 🔬 Current Solver: 2D Lid-Driven Cavity Flow (Rhie-Chow)
 
