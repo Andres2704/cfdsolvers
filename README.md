@@ -1,11 +1,11 @@
 
-# 🌀 CFD Solvers in Julia
+# CFD Solvers in Julia
 
 This repository is dedicated to implementing various **Computational Fluid Dynamics (CFD)** solvers in Julia. Each solver is designed to be as modular, readable, and educational as possible. The project begins with a classic test case: **2D lid-driven cavity flow**, solved using a finite volume scheme with **Rhie-Chow interpolation** for pressure-velocity coupling on a collocated grid and also **staggered grids**.
 
-## 🔬 Current Solver: 2D Lid-Driven Cavity Flow (Rhie-Chow)
+## Current Solver: 2D Lid-Driven Cavity Flow (Rhie-Chow)
 
-### ✅ Features
+### Features
 
 - Collocated grid layout
 - Rhie-Chow interpolation to avoid pressure-velocity decoupling
@@ -16,7 +16,7 @@ This repository is dedicated to implementing various **Computational Fluid Dynam
 
 ---
 
-## 📁 File Structure
+## File Structure
 
 ```
 .
@@ -28,15 +28,15 @@ This repository is dedicated to implementing various **Computational Fluid Dynam
 
 ---
 
-## ▶️ How to Run
+## How to Run
 
-### 1. 📦 Requirements
+### 1. Requirements
 
 Make sure you have [Julia](https://julialang.org/downloads/) installed (version 1.6+ recommended).
 
 No external libraries are required, only the standard library `DelimitedFiles`.
 
-### 2. 🚀 Run the Simulation
+### 2. Run the Simulation
 
 ```bash
 julia main_simulation_rhiechow.jl
@@ -49,7 +49,7 @@ This will:
 
 ---
 
-## ⚙️ Configurable Parameters
+## Configurable Parameters
 
 You can change the simulation setup directly in `main_simulation_rhiechow.jl`:
 
@@ -75,7 +75,7 @@ MAXSOR_ITER = 300
 
 ---
 
-## 📤 Output Files
+## Output Files
 
 After simulation, the following files will be generated:
 
@@ -93,23 +93,3 @@ After simulation, the following files will be generated:
 These files can be post-processed with Python (e.g., using `matplotlib`), Julia (e.g., `Plots.jl`), MATLAB, or ParaView after format conversion.
 
 ---
-
-## 🛠️ Next Steps
-
-This repository will gradually grow to include:
-- Other canonical test cases 
-- Compressible solvers
-- Turbulence modeling
-- High-order schemes
----
-
-## 📄 License
-
-This project is open-source under the MIT License.
-
----
-
-## ✍️ Author
-
-Andres Benoit  
-Feel free to open issues or discussions if you'd like to contribute or suggest improvements.
